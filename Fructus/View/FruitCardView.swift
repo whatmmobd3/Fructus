@@ -4,15 +4,18 @@ struct FruitCardView: View {
     // PROPERTIES
     
     // BODY
+    
+    @State private var isAnimating: Bool = false
     var body: some View {
         
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color("ColorBlueBerryLight"), Color.red]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color("ColorBlueBerryLight"), Color("ColorBlueBerryDark")]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 Image("blueberry")
                     .resizable()
                     .scaledToFit()
+                    .scaleEffect(isAnimating ? 1.0 : 0.6)
                 
                 Text("Blueberry")
                     .font(.largeTitle)
@@ -26,7 +29,13 @@ struct FruitCardView: View {
                     .padding(.horizontal, 20 )
                     .padding(.top, 20)
                     .frame(maxWidth: 500)
+                StartButtonView()
                 
+            }
+        }
+        .onAppear{
+            withAnimation(.easeOut(duration: 0.5)){
+                isAnimating = true
             }
         }
     }

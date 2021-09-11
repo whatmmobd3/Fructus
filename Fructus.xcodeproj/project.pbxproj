@@ -12,6 +12,8 @@
 		FB80B10126EC985F0022C225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB80B10026EC985F0022C225 /* Assets.xcassets */; };
 		FB80B10426EC985F0022C225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB80B10326EC985F0022C225 /* Preview Assets.xcassets */; };
 		FB80B10C26EC9F380022C225 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80B10B26EC9F380022C225 /* FruitCardView.swift */; };
+		FB80B11026ECA8600022C225 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80B10F26ECA8600022C225 /* StartButtonView.swift */; };
+		FB80B11226ECABF70022C225 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80B11126ECABF70022C225 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FB80B10326EC985F0022C225 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB80B10526EC985F0022C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB80B10B26EC9F380022C225 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		FB80B10F26ECA8600022C225 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		FB80B11126ECABF70022C225 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				FB80B10B26EC9F380022C225 /* FruitCardView.swift */,
+				FB80B11126ECABF70022C225 /* OnboardingView.swift */,
+				FB80B10F26ECA8600022C225 /* StartButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB80B10C26EC9F380022C225 /* FruitCardView.swift in Sources */,
+				FB80B11026ECA8600022C225 /* StartButtonView.swift in Sources */,
 				FB80B0FF26EC985C0022C225 /* ContentView.swift in Sources */,
+				FB80B11226ECABF70022C225 /* OnboardingView.swift in Sources */,
 				FB80B0FD26EC985C0022C225 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
