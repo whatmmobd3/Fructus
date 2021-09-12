@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    var fruit: [Fruit] = fruitsData
     var body: some View {
         TabView {
-            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                FruitCardView()
+            ForEach(fruit[/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/]) { item in
+                FruitCardView(fruit: item)
             }
         }
         .tabViewStyle(PageTabViewStyle())
@@ -21,6 +22,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(fruit: fruitsData)
     }
 }
