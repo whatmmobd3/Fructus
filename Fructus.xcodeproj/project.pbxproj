@@ -16,6 +16,7 @@
 		FB80B11226ECABF70022C225 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80B11126ECABF70022C225 /* OnboardingView.swift */; };
 		FBC7811126ED96DB0044668A /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7811026ED96DB0044668A /* FruitModel.swift */; };
 		FBC7811426ED985A0044668A /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7811326ED985A0044668A /* FruitData.swift */; };
+		FBC7811726EDA9040044668A /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7811626EDA9040044668A /* FruitRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FB80B11126ECABF70022C225 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FBC7811026ED96DB0044668A /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		FBC7811326ED985A0044668A /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
+		FBC7811626EDA9040044668A /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				FB80B10B26EC9F380022C225 /* FruitCardView.swift */,
-				FB80B11126ECABF70022C225 /* OnboardingView.swift */,
 				FB80B10F26ECA8600022C225 /* StartButtonView.swift */,
+				FBC7811626EDA9040044668A /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 			children = (
 				FB80B0FC26EC985C0022C225 /* FructusApp.swift */,
 				FB80B0FE26EC985C0022C225 /* ContentView.swift */,
+				FB80B11126ECABF70022C225 /* OnboardingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				FBC7811426ED985A0044668A /* FruitData.swift in Sources */,
 				FB80B10C26EC9F380022C225 /* FruitCardView.swift in Sources */,
+				FBC7811726EDA9040044668A /* FruitRowView.swift in Sources */,
 				FB80B11026ECA8600022C225 /* StartButtonView.swift in Sources */,
 				FB80B0FF26EC985C0022C225 /* ContentView.swift in Sources */,
 				FB80B11226ECABF70022C225 /* OnboardingView.swift in Sources */,

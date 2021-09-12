@@ -1,21 +1,24 @@
-//
-//  ContentView.swift
-//  Fructus
-//
-//  Created by Loc Nguyen on 11/09/2021.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    var fruits: [Fruit] = fruitsData
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(fruits.shuffled()) { item in
+                    FruitRowView(fruit: item)
+                }
+            }
+            .navigationTitle("Fruit")
+            .listStyle(InsetGroupedListStyle())
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(fruits: fruitsData)
+        
     }
 }
