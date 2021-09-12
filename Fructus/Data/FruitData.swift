@@ -1,12 +1,11 @@
 import SwiftUI
 
-//test checkout main
 let fruitsData: [Fruit] = [
     Fruit(
         title: "Blueberry",
         headline: "Blueberries are sweet, nutritious and wildly popular fruit all over the world.",
         image: "blueberry",
-        gradientColors: [Color("ColorBlueberryLight"), Color.red],
+        gradientColors: [Color("ColorBlueBerryLight"), Color("ColorBlueBerryDark")],
         description: """
           Blueberries are perennial flowering plants with blue or purple berries. They are classified in the section Cyanococcus within the genus Vaccinium. Vaccinium also includes cranberries, bilberries, huckleberries and Madeira blueberries.
 
