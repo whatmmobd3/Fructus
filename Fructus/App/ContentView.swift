@@ -7,11 +7,13 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(fruits.shuffled()) { item in
-                    FruitRowView(fruit: item)
+                    NavigationLink(destination: FruitDetailView(fruit: item)) {
+                        FruitRowView(fruit: item)
+                    }
                 }
             }
             .navigationTitle("Fruit")
-            .listStyle(InsetGroupedListStyle())
+//            .listStyle(InsetGroupedListStyle())
         }
     }
 }
